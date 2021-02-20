@@ -36,6 +36,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
+}
+
+img {
+  display: block;
 }
 
 header {
@@ -101,22 +106,25 @@ main #section-a .albumbox {
   font-family: 'Montserrat', sans-serif;
   width: 22%;
   height: 32%;
-  background-color: grey;
   margin: 0 1rem 1rem 0;
+  padding: .5rem;
 }
 
-main #section-a .box1 {
-  background-image: url(/Images/albumcover1.jpg);
-  background-position: center;
-  background-size: cover;
+main #section-a .album1, main #section-a .album2, main #section-a .album3, main #section-a .album4, main #section-a .album5, main #section-a .album6, main #section-a .album7, main #section-a .album8 {
+  width: 100%;
+  height: auto;
+}
+
+main #section-a span {
+  font-size: 1rem;
 }
 
 main #section-b {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
-  -webkit-box-flex: .6;
-      -ms-flex: .6;
-          flex: .6;
+  -webkit-box-flex: .7;
+      -ms-flex: .7;
+          flex: .7;
   padding: 1rem;
   height: 83vh;
 }

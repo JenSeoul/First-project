@@ -14,6 +14,10 @@ body{
 }
 a{
   text-decoration: none;
+  color:$secondaryColor;
+}
+img{
+  display:block;
 }
 header{
   top:0;
@@ -28,6 +32,7 @@ header{
     padding: 1rem;
   }
 }
+
 main{
   @include flexcenter(row);
   & #section-a {
@@ -39,24 +44,25 @@ main{
     text-align:center;
     background-color: $primaryColor;
     height:83vh;
-
     & .albumbox {
       @include maintext;
       width:22%;
       height:32%;
-      background-color: grey;
       margin:0 1rem 1rem 0;
+      padding:.5rem;
     }
-    & .box1{
-      background-image: url(/Images/albumcover1.jpg);
-      background-position: center;
-      background-size: cover;
+    & .album1, .album2, .album3, .album4, .album5, .album6, .album7, .album8 {
+      width:100%;
+      height:auto;
+    }
+    & span{
+      font-size:1rem;
     }
   }
   & #section-b {
     font-family: 'Montserrat', sans-serif;
     background-color: $secondaryColor;
-    flex:.6;
+    flex:.7;
     padding:1rem;
     height: 83vh;
 
@@ -67,8 +73,7 @@ main{
       height:90%;
       border-right:1px solid $primaryColor;
     }
-  }
-  
+  } 
 }
 footer{
   bottom:0;
