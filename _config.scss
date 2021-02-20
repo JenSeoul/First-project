@@ -1,0 +1,14 @@
+$primaryColor:#000;
+$secondaryColor: #fff; 
+
+.columntext{
+    font-family: 'Montserrat', sans-serif;
+    color: $primaryColor;
+    font-size:1.4rem;
+    writing-mode: vertical-rl;
+}
+@mixin maintext{
+    color:$secondaryColor;
+    font-size:1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}

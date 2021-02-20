@@ -1,5 +1,91 @@
+@import 'utility.scss';
+@import 'button.scss';
+@import 'flexcenter.scss';
+@import 'config.scss';
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  background-color:$primaryColor;
+}
+a{
+  text-decoration: none;
+}
+header{
+  top:0;
+  position:sticky;
+  z-index:1;
+  background-color:$primaryColor;
+
+  nav{
+    @include flexcenter(row);
+    justify-content:space-between;
+    align-items:center;
+    padding: 1rem;
+  }
+}
+main{
+  @include flexcenter(row);
+  & #section-a {
+    @include flexcenter(row);
+    flex-wrap:wrap;
+    align-items:center;
+    padding:1rem;
+    flex:4;
+    text-align:center;
+    background-color: $primaryColor;
+    height:83vh;
+
+    & .albumbox {
+      @include maintext;
+      width:22%;
+      height:32%;
+      background-color: grey;
+      margin:0 1rem 1rem 0;
+    }
+    & .box1{
+      background-image: url(/Images/albumcover1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  & #section-b {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $secondaryColor;
+    flex:.6;
+    padding:1rem;
+    height: 83vh;
+
+    & .text{
+      display:flex;
+      flex-direction:row;
+      top:0;
+      height:90%;
+      border-right:1px solid $primaryColor;
+    }
+  }
+  
+}
+footer{
+  bottom:0;
+  padding:.5rem 0;
+
+  @include flexcenter(row);
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color:$secondaryColor;
+  & .flexcontainer{
+    @include flexcenter(column);
+    align-items: center;
+  }
+  & i{
+    display:inline-block;
+    font-size: 2rem;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+  }
 }
