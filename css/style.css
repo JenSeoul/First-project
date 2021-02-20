@@ -105,14 +105,67 @@ main #section-a .albumbox {
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   width: 22%;
-  height: 32%;
+  height: 30%;
   margin: 0 1rem 1rem 0;
   padding: .5rem;
 }
 
-main #section-a .album1, main #section-a .album2, main #section-a .album3, main #section-a .album4, main #section-a .album5, main #section-a .album6, main #section-a .album7, main #section-a .album8 {
+main #section-a .albumcontent1, main #section-a .albumcontent2, main #section-a .albumcontent3, main #section-a .albumcontent4, main #section-a .albumcontent5, main #section-a .albumcontent6, main #section-a .albumcontent7, main #section-a .albumcontent8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #section-a .albumcontent1 i, main #section-a .albumcontent2 i, main #section-a .albumcontent3 i, main #section-a .albumcontent4 i, main #section-a .albumcontent5 i, main #section-a .albumcontent6 i, main #section-a .albumcontent7 i, main #section-a .albumcontent8 i {
+  font-size: 2rem;
+  display: none;
+}
+
+main #section-a .albumcontent1 {
+  background-image: url(/Images/albumcover1.jpg);
+}
+
+main #section-a .albumcontent2 {
+  background-image: url(/Images/albumcover1.jpg);
+}
+
+main #section-a .albumcontent3 {
+  background-image: url(/Images/albumcover1.jpg);
+}
+
+main #section-a .albumcontent4 {
+  background-image: url(/Images/albumcover4.jpg);
+}
+
+main #section-a .albumcontent5 {
+  background-image: url(/Images/albumcover5.jpg);
+}
+
+main #section-a .albumcontent6 {
+  background-image: url(/Images/albumcover6.jpg);
+}
+
+main #section-a .albumcontent7 {
+  background-image: url(/Images/albumcover7.jpg);
+}
+
+main #section-a .albumcontent8 {
+  background-image: url(/Images/albumcover8.jpg);
 }
 
 main #section-a span {
@@ -145,6 +198,8 @@ main #section-b .text {
 footer {
   bottom: 0;
   padding: .5rem 0;
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

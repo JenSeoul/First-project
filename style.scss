@@ -32,7 +32,6 @@ header{
     padding: 1rem;
   }
 }
-
 main{
   @include flexcenter(row);
   & #section-a {
@@ -46,14 +45,57 @@ main{
     height:83vh;
     & .albumbox {
       @include maintext;
-      width:22%;
-      height:32%;
+      width: 22%;
+      height:30%;
       margin:0 1rem 1rem 0;
       padding:.5rem;
     }
-    & .album1, .album2, .album3, .album4, .album5, .album6, .album7, .album8 {
+
+    & .albumcontent1, .albumcontent2, .albumcontent3, .albumcontent4, .albumcontent5, .albumcontent6, .albumcontent7, .albumcontent8{
+      @include flexcenter(row);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       width:100%;
-      height:auto;
+      height:100%;
+      align-items: center;
+      justify-content: center;
+      & i{
+        font-size:2rem;
+        display:none;
+      }
+    }
+
+    & .albumcontent1{
+      background-image: url(/Images/albumcover1.jpg);
+    }
+
+    & .albumcontent2{
+      background-image: url(/Images/albumcover1.jpg);
+    }
+
+    & .albumcontent3{
+      background-image: url(/Images/albumcover1.jpg);
+    }
+
+    & .albumcontent4{
+      background-image: url(/Images/albumcover4.jpg);
+    }
+
+    & .albumcontent5{
+      background-image: url(/Images/albumcover5.jpg);
+    }
+
+    & .albumcontent6{
+      background-image: url(/Images/albumcover6.jpg);
+    }
+
+    & .albumcontent7{
+      background-image: url(/Images/albumcover7.jpg);
+    }
+
+    & .albumcontent8{
+      background-image: url(/Images/albumcover8.jpg);
     }
     & span{
       font-size:1rem;
@@ -78,6 +120,7 @@ main{
 footer{
   bottom:0;
   padding:.5rem 0;
+  position:sticky;
 
   @include flexcenter(row);
   justify-content: center;
