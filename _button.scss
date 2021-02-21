@@ -6,3 +6,26 @@
   font-weight:bold;
   display:inline-block;
 }
+.purchasebutton{
+  padding: 11px 19px;
+  background-color: #fff;
+  -webkit-text-stroke: .1px #000;
+  color:#fff;
+  font-size:1.2rem;
+  font-weight:bold;
+  display:inline-block;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+}
+.selectbutton{
+  border:none;
+  appearance:none;
+  color:white;
+  padding:1rem 3rem;
+  font-size:.8rem;
+  width:5rem;
+  font-weight:bold;
+  display:inline-block;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}

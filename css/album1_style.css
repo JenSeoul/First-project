@@ -103,121 +103,25 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-main #section-a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  text-align: center;
-  height: 83vh;
-}
-
-main #section-a .albumbox {
   color: #fff;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  width: 22%;
-  height: 30%;
-  margin: 0 1rem 1rem 0;
-  padding: .5rem;
-}
-
-main #section-a .albumbox i {
-  font-size: 1.8rem;
-  display: none;
-  padding: 1rem;
-}
-
-main #section-a .albumbox i:hover {
-  color: #DB1210;
-}
-
-main #section-a .albumcontent1, main #section-a .albumcontent2, main #section-a .albumcontent3, main #section-a .albumcontent4, main #section-a .albumcontent5, main #section-a .albumcontent6, main #section-a .albumcontent7, main #section-a .albumcontent8 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 99%;
-  height: 92%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 100%;
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
-}
-
-main #section-a .albumcontent1 {
-  background-image: url(/Images/albumcover1.jpg);
-}
-
-main #section-a .albumcontent2 {
-  background-image: url(/Images/albumcover1.jpg);
-}
-
-main #section-a .albumcontent3 {
-  background-image: url(/Images/albumcover1.jpg);
-}
-
-main #section-a .albumcontent4 {
-  background-image: url(/Images/albumcover4.jpg);
-}
-
-main #section-a .albumcontent5 {
-  background-image: url(/Images/albumcover5.jpg);
-}
-
-main #section-a .albumcontent6 {
-  background-image: url(/Images/albumcover6.jpg);
-}
-
-main #section-a .albumcontent7 {
-  background-image: url(/Images/albumcover7.jpg);
-}
-
-main #section-a .albumcontent8 {
-  background-image: url(/Images/albumcover8.jpg);
-}
-
-main #section-a span {
-  font-size: 1rem;
-}
-
-main #section-a .albumcontent1:hover, main #section-a .albumcontent2:hover, main #section-a .albumcontent3:hover, main #section-a .albumcontent4:hover, main #section-a .albumcontent5:hover, main #section-a .albumcontent6:hover, main #section-a .albumcontent7:hover, main #section-a .albumcontent8:hover {
-  opacity: 80%;
-}
-
-main #section-b {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
-  -webkit-box-flex: .7;
-      -ms-flex: .7;
-          flex: .7;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
   height: 83vh;
 }
 
-main #section-b .text {
+main #mainsection {
+  width: 85%;
+  height: 85%;
+}
+
+main #mainsection .topflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,13 +129,163 @@ main #section-b .text {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  top: 0;
-  height: 90%;
-  border-right: 1px solid #000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #mainsection .topflex .albumcover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 228px;
+}
+
+main #mainsection .topflex .albumcover .imagecover {
+  background-image: url(/Images/albumcover1.jpg);
+  background-size: cover;
+  width: 246px;
+  height: 228px;
+}
+
+main #mainsection .topflex .albuminfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 228px;
+  padding: .5rem;
+}
+
+main #mainsection .topflex .albuminfo .column1, main #mainsection .topflex .albuminfo .column2, main #mainsection .topflex .albuminfo .column3 {
+  width: 266px;
+  background-color: black;
+}
+
+main #mainsection .topflex .albuminfo .column1 {
+  font-size: 1.5rem;
+}
+
+main #mainsection .topflex .albuminfo .column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+main #mainsection .topflex .albuminfo .column2 p {
+  margin-left: .6rem;
+  margin-bottom: 1rem;
+}
+
+main #mainsection .topflex .albuminfo .column2 span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+main #mainsection .topflex .albuminfo .column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #mainsection .topflex .albuminfo .column3 button {
+  margin-left: .5rem;
+}
+
+main #mainsection .bottomcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+main #mainsection .bottomcolumn .flexcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #mainsection .bottomcolumn .albumlist, main #mainsection .bottomcolumn .videos {
+  border-bottom: 1px solid white;
+  height: 18vh;
+  width: 100%;
+  background-color: blue;
 }
 
 footer {
   bottom: 0;
+  z-index: 1;
   padding: .5rem 0;
   position: -webkit-sticky;
   position: sticky;
