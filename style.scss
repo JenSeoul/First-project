@@ -41,7 +41,6 @@ main{
     padding:1rem;
     flex:4;
     text-align:center;
-    background-color: $primaryColor;
     height:83vh;
     & .albumbox {
       @include maintext;
@@ -49,6 +48,15 @@ main{
       height:30%;
       margin:0 1rem 1rem 0;
       padding:.5rem;
+
+      & i{
+        font-size:1.8rem;
+        display:none;
+        padding:1rem;
+      }
+      & i:hover{
+        color: $pointColor;
+      }
     }
 
     & .albumcontent1, .albumcontent2, .albumcontent3, .albumcontent4, .albumcontent5, .albumcontent6, .albumcontent7, .albumcontent8{
@@ -56,14 +64,11 @@ main{
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      width:100%;
-      height:100%;
+      width:99%;
+      height:92%;
       align-items: center;
-      justify-content: center;
-      & i{
-        font-size:2rem;
-        display:none;
-      }
+      opacity:100%;
+      transition: .5s ease all;
     }
 
     & .albumcontent1{
@@ -100,6 +105,9 @@ main{
     & span{
       font-size:1rem;
     }
+    & .albumcontent1:hover, .albumcontent2:hover, .albumcontent3:hover, .albumcontent4:hover, .albumcontent5:hover, .albumcontent6:hover, .albumcontent7:hover, .albumcontent8:hover{
+      opacity:80%;
+    }
   }
   & #section-b {
     font-family: 'Montserrat', sans-serif;
@@ -135,5 +143,8 @@ footer{
     font-size: 2rem;
     margin-left: .5rem;
     margin-bottom: .5rem;
+  }
+  #playbutton:hover, #stopbutton:hover{
+    color: $pointColor;
   }
 }
