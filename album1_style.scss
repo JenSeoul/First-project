@@ -43,15 +43,15 @@
         height:85%;
         & .topflex{
             @include flexcenter(row);
-            justify-content:space-between;
-            align-items: center;
+            justify-content: center;
             flex-wrap:wrap;
+            align-items: center;
             & .albumcover{
                 @include flexcenter(row);
-                justify-content: center;
-                align-items: center;
+                justify-content: flex-start;
                 flex:1;
                 height:228px;
+                margin-left:.5rem;
                 & .imagecover{
                     background-image: url(/Images/albumcover1.jpg);
                     background-size: cover;
@@ -62,7 +62,7 @@
             & .albuminfo{
                 @include flexcenter(column);
                 @include maintext;
-                flex:1;
+                flex:1.3;
                 justify-content: space-between;
                 height:228px;
                 padding:.5rem;
@@ -92,9 +92,13 @@
                     align-items: center;
                     & button{
                         margin-left:.5rem;
+                        transition: 1s ease all;
+                    }
+                    & button:hover{
+                        transform: scale(0.90);
+                        background-color: darken($secondaryColor, 20%);
                     }
                 }
-                
             }
         }
         & .bottomcolumn{
@@ -102,24 +106,28 @@
             justify-content: center;
             align-items: center;
             padding:.5rem;
+            & p{
+              margin: 1rem 0;
+            }
             & .flexcolumn{
                 @include flexcenter(column);
                 flex:1;
                 justify-content: space-between;
-                align-items: center;
             }
-            & .albumlist, & .videos{
-                border-bottom: 1px solid white;
-                height:18vh;
-                width:100%;
-                background-color: blue;
+            & .videos, & .albumlist{
+                height:14vh;
+                padding:1rem 0;
+                margin: 1rem 0;
+            }
+            & .flexcontainer p{
+              font-size:1rem;
             }
         }
     }
     
 }
   
-  footer{
+footer{
     bottom:0;
     z-index:1;
     padding:.5rem 0;
@@ -142,4 +150,4 @@
     #playbutton:hover, #stopbutton:hover{
       color: $pointColor;
     }
-  }
+}

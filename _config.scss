@@ -14,3 +14,21 @@ $border: 1px solid $secondaryColor;
     font-size:1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
+.border{
+    border-bottom: 1px solid $secondaryColor;
+}
+select{
+  outline: none;
+  appearance: none;
+  border: 0;
+  display:inline-block;
+  -webkit-appearance: none;
+  width:7rem;
+  padding:.8rem .5rem;
+  border-radius:10px;
+  font-size:1.2rem;
+  -webkit-text-stroke: .8px #000;
+  color:#fff;
+  position:relative;
+}
+
