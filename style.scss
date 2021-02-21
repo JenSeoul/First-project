@@ -148,3 +148,45 @@ footer{
     color: $pointColor;
   }
 }
+.intro{
+  @include flexcenter(row);
+  justify-content:center;
+  align-items: center;
+  background-color: $secondaryColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  & .text{
+  font-family: 'Montserrat', sans-serif;
+  color: $primaryColor;
+  font-size: 3rem;
+  display:inline-block;
+  padding-bottom:2.5rem;
+  line-height: 4.5rem;
+  }
+  & .hide{
+    background-color: $secondaryColor;
+    overflow:hidden;
+  }
+  & .hide span{
+    display:inline-block;
+    transform: translateY(100%);
+
+  }
+}
+.slider{
+  @include flexcenter(row);
+  justify-content:center;
+  align-items: center;
+  background-color: $pointColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  transform: translateY(100%);
+}
