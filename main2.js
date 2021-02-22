@@ -1,4 +1,7 @@
 const albumDivs = document.querySelectorAll('.albumbox');
+const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+tl.fromTo(".container", {opacity:0}, {opacity:1, duration:2});
+
 
 albumDivs.forEach(albumDiv=>{
     albumDiv.addEventListener('mouseenter', showPlays);

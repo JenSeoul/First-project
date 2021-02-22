@@ -89,9 +89,9 @@
                 }
                 & .column3{
                     @include flexcenter(row);
-                    align-items: center;
+                    align-items: flex-end;
                     & button{
-                        margin-left:.5rem;
+                        margin-left:2rem;
                         transition: 1s ease all;
                     }
                     & button:hover{
@@ -150,4 +150,22 @@ footer{
     #playbutton:hover, #stopbutton:hover{
       color: $pointColor;
     }
+}
+@media(max-width:770px) {
+  header{
+    position:fixed;
+    z-index: 1;
+    width:100%;
+  }
+  main{
+    .topflex{
+      text-align:center;
+      & .imagecover{
+        margin:0 auto;
+      }
+    }
+  }
+  footer{
+      display:none;
+  }
 }
