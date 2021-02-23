@@ -30,6 +30,9 @@ header{
     align-items:center;
     padding: 1rem;
   }
+  .navcontrols{
+    display:none;
+  }
 }
 main{
   @include flexcenter(row);
@@ -43,14 +46,15 @@ main{
     height:83vh;
     & .albumbox {
       @include maintext;
-      width: 22%;
-      height:26%;
+      width: 23%;
+      height:31%;
       margin:0 1rem 1rem 0;
       padding:1rem;
       & i{
         font-size:1.8rem;
         padding:1rem;
-        pointer-events: none;
+        display:block;
+        color:$mainPlay;
       }
       & i:hover{
         color: $pointColor;
@@ -187,12 +191,21 @@ footer{
   height:100%;
   transform: translateY(100%);
 }
-@media (max-width:770px){
+@media (max-width:700px){
   header{
     position:fixed;
     z-index: 1;
     width:100%;
+    .navcontrols{
+      display:block;
+      i{
+        color:$secondaryColor;
+        font-size:2rem;
+        margin:0 .5rem;
+      }
+    }
   }
+
   main{
     margin:2rem 0;
     & #section-a {
@@ -206,8 +219,11 @@ footer{
         @include maintext;
         width: 260px;
         height:255px;
-        margin:1.5rem 0;
+        margin:2.5rem 0;
         padding:1rem;
+        & i{
+          display:block;
+        }
       }
     }  
     #section-b{

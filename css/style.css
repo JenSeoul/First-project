@@ -102,6 +102,10 @@ header nav {
   padding: 1rem;
 }
 
+header .navcontrols {
+  display: none;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,16 +141,17 @@ main #section-a .albumbox {
   color: #fff;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  width: 22%;
-  height: 28%;
+  width: 23%;
+  height: 31%;
   margin: 0 1rem 1rem 0;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 main #section-a .albumbox i {
   font-size: 1.8rem;
-  display: none;
   padding: 1rem;
+  display: block;
+  color: #363636;
 }
 
 main #section-a .albumbox i:hover {
@@ -273,7 +278,7 @@ footer i {
   margin-bottom: .5rem;
 }
 
-footer #playbutton:hover, footer #stopbutton:hover {
+footer #footerplay:hover, footer #footerstop:hover {
   color: #DB1210;
 }
 
@@ -345,11 +350,19 @@ footer #playbutton:hover, footer #stopbutton:hover {
           transform: translateY(100%);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 700px) {
   header {
     position: fixed;
     z-index: 1;
     width: 100%;
+  }
+  header .navcontrols {
+    display: block;
+  }
+  header .navcontrols i {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .5rem;
   }
   main {
     margin: 2rem 0;
@@ -378,8 +391,11 @@ footer #playbutton:hover, footer #stopbutton:hover {
     font-family: 'Montserrat', sans-serif;
     width: 260px;
     height: 255px;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
     padding: 1rem;
+  }
+  main #section-a .albumbox i {
+    display: block;
   }
   main #section-b {
     display: none;

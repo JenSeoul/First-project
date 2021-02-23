@@ -162,6 +162,7 @@ main #mainsection .topflex .albumcover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  cursor: pointer;
   height: 228px;
   margin-left: .5rem;
 }
@@ -344,6 +345,46 @@ footer i {
 
 footer #playbutton:hover, footer #stopbutton:hover {
   color: #DB1210;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #36363664;
+  position: absolute;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal .modalcontainer {
+  background-color: #fff;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal .modalcontainer h1 {
+  padding: 1rem;
+}
+
+.modal .modalcontainer p {
+  padding: 1rem;
 }
 
 @media (max-width: 770px) {
