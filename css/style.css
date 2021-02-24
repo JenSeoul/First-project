@@ -150,12 +150,12 @@ main #section-a .albumbox {
 main #section-a .albumbox i {
   font-size: 1.8rem;
   padding: 1rem;
-  display: block;
+  display: inline-block;
   color: #363636;
 }
 
 main #section-a .albumbox i:hover {
-  color: #DB1210;
+  color: #DB1210 !important;
 }
 
 main #section-a .albumcontent1, main #section-a .albumcontent2, main #section-a .albumcontent3, main #section-a .albumcontent4, main #section-a .albumcontent5, main #section-a .albumcontent6, main #section-a .albumcontent7, main #section-a .albumcontent8 {
@@ -350,7 +350,7 @@ footer #footerplay:hover, footer #footerstop:hover {
           transform: translateY(100%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   header {
     position: fixed;
     z-index: 1;

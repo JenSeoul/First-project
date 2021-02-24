@@ -104,6 +104,10 @@ header nav {
   padding: 1rem;
 }
 
+header nav .navcontrols {
+  display: none;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +125,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
   height: 83vh;
 }
 
@@ -146,6 +150,7 @@ main #mainsection .topflex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem 0;
 }
 
 main #mainsection .topflex .albumcover {
@@ -168,7 +173,7 @@ main #mainsection .topflex .albumcover {
 }
 
 main #mainsection .topflex .albumcover .imagecover {
-  background-image: url(/Images/albumcover1.jpg);
+  background-image: url(/Images/albumcover4.jpg);
   background-size: cover;
   width: 246px;
   height: 228px;
@@ -303,6 +308,10 @@ main #mainsection .bottomcolumn .flexcontainer p {
   font-size: 1rem;
 }
 
+main #mainsection .bottomcolumn .flexcontainer p:first-child {
+  color: lightgrey;
+}
+
 footer {
   bottom: 0;
   z-index: 1;
@@ -392,6 +401,14 @@ footer #playbutton:hover, footer #stopbutton:hover {
     position: fixed;
     z-index: 1;
     width: 100%;
+  }
+  header nav .navcontrols {
+    display: block;
+  }
+  header nav i {
+    color: #fff;
+    font-size: 2rem;
+    margin: .5rem;
   }
   main .topflex {
     text-align: center;

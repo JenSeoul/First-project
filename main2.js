@@ -40,5 +40,12 @@ mainItags.forEach(itags=>{
             navPlay.style.color = '#fff';
             setTimeout(()=>{navStop.style.color = '#fff'},1500)
         })
+        allSongs.forEach(songs=>{
+            songs.onended = function(){
+                playButton.style.color= '#363636';
+                navPlay.style.color = '#fff';
+                controlPlay.style.color ='#fff';
+            }
+        })
     }
 })

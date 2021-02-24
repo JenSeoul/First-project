@@ -29,6 +29,9 @@
       justify-content:space-between;
       align-items:center;
       padding: 1rem;
+      & .navcontrols{
+        display:none;
+      }
     }
   }
   main{
@@ -36,7 +39,7 @@
     @include maintext;
     align-items:center;
     justify-content: center;
-    padding:1rem;
+    padding:2rem;
     height:83vh;
     & #mainsection{
         width:85%;
@@ -46,6 +49,7 @@
             justify-content: center;
             flex-wrap:wrap;
             align-items: center;
+            padding:1rem 0;
             & .albumcover{
                 @include flexcenter(row);
                 justify-content: flex-start;
@@ -54,7 +58,7 @@
                 height:228px;
                 margin-left:.5rem;
                 & .imagecover{
-                    background-image: url(/Images/albumcover1.jpg);
+                    background-image: url(/Images/albumcover4.jpg);
                     background-size: cover;
                     width:246px;
                     height:228px;
@@ -123,6 +127,9 @@
             & .flexcontainer p{
               font-size:1rem;
             }
+            & .flexcontainer p:first-child{
+              color:lightgrey;
+          }
         }
     }
     
@@ -184,6 +191,16 @@ footer{
     position:fixed;
     z-index: 1;
     width:100%;
+    nav{
+      .navcontrols{
+        display:block;
+      }
+      i{
+        color:$secondaryColor;
+        font-size:2rem;
+        margin:.5rem;
+      }
+    }
   }
   main{
     .topflex{

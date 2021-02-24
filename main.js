@@ -11,7 +11,7 @@ const mainItags = arrayItags.slice(2,10);
 
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 tl.to(".text",{y:"0", duration:1, stagger: 0.25});
-tl.to(".slider", {y:"-100%", duration:1.5, delay:0.5});
+tl.to(".slider", {y:"-100%", duration:1, delay:0.5});
 tl.to(".intro", {y:"-100%", duration:1, delay:0.5}, "-=1");
 
 mainItags.forEach(itags=>{
@@ -22,11 +22,13 @@ mainItags.forEach(itags=>{
         const anChor = Array.from(div)[0];
         const song = Array.from(anChor.children)[2];
         allSongs.forEach(songs=>songs.pause());
-        mainItags.forEach(itags=>itags.style.color ='#363636');
+        mainItags.forEach(itags=>{
+            itags.style.color ='#363636'
+        });
+        song.play();
         controlPlay.style.color = '#DB1210';
         navPlay.style.color = '#DB1210';
         playButton.style.color = '#DB1210';
-        song.play();
         controlStop.addEventListener('click', ()=>{
             allSongs.forEach(songs=>songs.pause())
             song.pause()
@@ -41,6 +43,13 @@ mainItags.forEach(itags=>{
             playButton.style.color= '#363636';
             navPlay.style.color = '#fff';
             setTimeout(()=>{navStop.style.color = '#fff'},1500)
+        })
+        allSongs.forEach(songs=>{
+            songs.onended = function(){
+                playButton.style.color= '#363636';
+                navPlay.style.color = '#fff';
+                controlPlay.style.color ='#fff';
+            }
         })
     }
 })
