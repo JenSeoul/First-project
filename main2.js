@@ -37,6 +37,7 @@ mainItags.forEach(itags=>{
             allSongs.forEach(songs=>songs.pause())
             song.pause()
             playButton.style.color= '#363636';
+            navStop.style.color ='#DB1210';
             navPlay.style.color = '#fff';
             setTimeout(()=>{navStop.style.color = '#fff'},1500)
         })
