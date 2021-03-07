@@ -1,0 +1,422 @@
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 100vh;
+  background-color: #000;
+}
+
+.navbutton {
+  font-family: 'Mulish', sans-serif;
+  -webkit-text-stroke: .1px #fff;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.purchasebutton {
+  padding: 11px 18px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background-color: #fff;
+  -webkit-text-stroke: .8px #000;
+  color: #fff;
+  font-size: 1rem;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+}
+
+.columntext {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 1.4rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.border {
+  border-bottom: 1px solid #fff;
+}
+
+select {
+  outline: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 0;
+  display: inline-block;
+  -webkit-appearance: none;
+  width: 7rem;
+  padding: .8rem .6rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  -webkit-text-stroke: .8px #000;
+  color: #fff;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  display: block;
+}
+
+header {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  background-color: #000;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+header nav .navcontrols {
+  display: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  height: 83vh;
+}
+
+main #mainsection {
+  width: 85%;
+  height: 85%;
+}
+
+main #mainsection .topflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+main #mainsection .topflex .albumcover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+  height: 228px;
+  margin-left: .5rem;
+}
+
+main #mainsection .topflex .albumcover .imagecover {
+  background-image: url(/Images/albumcover1.jpg);
+  background-size: cover;
+  width: 246px;
+  height: 228px;
+}
+
+main #mainsection .topflex .albuminfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-flex: 1.3;
+      -ms-flex: 1.3;
+          flex: 1.3;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 228px;
+  padding: .5rem;
+}
+
+main #mainsection .topflex .albuminfo .column1, main #mainsection .topflex .albuminfo .column2, main #mainsection .topflex .albuminfo .column3 {
+  width: 266px;
+  background-color: black;
+}
+
+main #mainsection .topflex .albuminfo .column1 {
+  font-size: 1.5rem;
+}
+
+main #mainsection .topflex .albuminfo .column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+main #mainsection .topflex .albuminfo .column2 p {
+  margin-left: .6rem;
+  margin-bottom: 1rem;
+}
+
+main #mainsection .topflex .albuminfo .column2 span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+main #mainsection .topflex .albuminfo .column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main #mainsection .topflex .albuminfo .column3 button {
+  margin-left: 2rem;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+main #mainsection .topflex .albuminfo .column3 button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #cccccc;
+}
+
+main #mainsection .bottomcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+main #mainsection .bottomcolumn p {
+  margin: 1rem 0;
+}
+
+main #mainsection .bottomcolumn .flexcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #mainsection .bottomcolumn .videos, main #mainsection .bottomcolumn .albumlist {
+  height: 14vh;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+main #mainsection .bottomcolumn .flexcontainer p {
+  font-size: 1rem;
+}
+
+main #mainsection .bottomcolumn .flexcontainer p:first-child {
+  color: lightgrey;
+}
+
+footer {
+  bottom: 0;
+  z-index: 1;
+  padding: .5rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+footer .flexcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer i {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: .5rem;
+  margin-bottom: .5rem;
+}
+
+footer #playbutton:hover, footer #stopbutton:hover {
+  color: #DB1210;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #36363664;
+  position: absolute;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.modal .modalcontainer {
+  background-color: #fff;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal .modalcontainer h1 {
+  padding: 1rem;
+}
+
+.modal .modalcontainer p {
+  padding: 1rem;
+}
+
+@media (max-width: 770px) {
+  header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+  header nav .navcontrols {
+    display: block;
+  }
+  header nav i {
+    color: #fff;
+    font-size: 2rem;
+    margin: .5rem;
+  }
+  main .topflex {
+    text-align: center;
+  }
+  main .topflex .imagecover {
+    margin: 0 auto;
+  }
+  footer {
+    display: none;
+  }
+}
