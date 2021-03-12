@@ -6,12 +6,16 @@
 }
 
 .navbutton {
-  font-family: 'Mulish', sans-serif;
-  -webkit-text-stroke: .1px #fff;
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-stroke: .8px #fff;
+  color: transparent;
+  font-size: 24px;
   display: inline-block;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
 }
 
 .purchasebutton {
@@ -129,7 +133,7 @@ main #section-a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: .5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -141,10 +145,10 @@ main #section-a .albumbox {
   color: #fff;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  width: 24%;
-  height: 26%;
+  width: 180px;
+  height: 180px;
   margin: 0 1rem 1rem 0;
-  padding: 1rem;
+
 }
 
 main #section-a .albumbox i {
@@ -222,7 +226,7 @@ main #section-a .albumcontent1:hover, main #section-a .albumcontent2:hover, main
 main #section-b {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
-  width: 150px;
+  width: 180px;
   padding: 1rem;
   height: 83vh;
 }

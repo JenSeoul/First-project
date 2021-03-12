@@ -6,12 +6,16 @@
 }
 
 .navbutton {
-  font-family: 'Mulish', sans-serif;
-  -webkit-text-stroke: .1px #fff;
-  color: black;
-  font-size:  25px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-stroke: .8px #fff;
+  color: transparent;
+  font-size: 24px;
   display: inline-block;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
 }
 
 .purchasebutton {
@@ -175,8 +179,8 @@ main #mainsection .topflex .albumcover {
 main #mainsection .topflex .albumcover .imagecover {
   background-image: url(/Images/albumcover7.jpg);
   background-size: cover;
-  width: 246px;
-  height: 228px;
+  width: 215px;
+  height: 215px;
 }
 
 main #mainsection .topflex .albuminfo {
@@ -374,12 +378,14 @@ footer #playbutton:hover, footer #stopbutton:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: #36363664;
-  position: absolute;
   top: 0;
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
   width: 100%;
   height: 100vh;
+  position:fixed;
+  overflow:auto;
+  left:0;
 }
 
 .modal .modalcontainer {
