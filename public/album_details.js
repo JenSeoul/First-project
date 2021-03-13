@@ -9,6 +9,7 @@ const footerPlay = document.querySelector('#footerplay');
 const footerStop = document.querySelector('#footerstop');
 const navPlay = document.querySelector('#navplay');
 const navStop = document.querySelector('#navstop');
+const closeBtn = document.querySelector('#closebtn');
 
 
 tl.fromTo(".container", {opacity:0}, {opacity:1, duration:2});
@@ -23,11 +24,12 @@ function showPrice(){priceText.innerHTML = `<span>${priceOption.value}</span>`};
 function showModal(){
     moDal.style.display ='flex';
     window.onclick = function(e){
-        if(e.target == moDal){
+            if(e.target === moDal){
             moDal.style.display = 'none';
-        }
+            }
     }
 }
+
 function playSong(){
     const song = Array.from(albumCover.children)[1];
     song.pause()

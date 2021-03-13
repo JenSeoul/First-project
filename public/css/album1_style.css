@@ -88,7 +88,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
-  background-color: #000;
+  background-color: transparent;
 }
 
 header nav {
@@ -397,11 +397,9 @@ footer #playbutton:hover, footer #stopbutton:hover {
 .modal .modalcontainer h1 {
   padding: 1rem;
 }
-
 .modal .modalcontainer p {
   padding: 1rem;
 }
-
 @media (max-width: 770px) {
   header {
     position: fixed;
@@ -415,6 +413,9 @@ footer #playbutton:hover, footer #stopbutton:hover {
     color: #fff;
     font-size: 2rem;
     margin: .5rem;
+  }
+  main{
+    margin-top:3rem;
   }
   main .topflex {
     text-align: center;
